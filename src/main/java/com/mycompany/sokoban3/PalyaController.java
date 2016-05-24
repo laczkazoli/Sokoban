@@ -67,9 +67,10 @@ public class PalyaController implements Initializable {
     public Button bal;
 
     /**
+     * when the button is pushed change the scene to an other which was before
+     * it
      *
-     * @param event get an event when the button is pushed change the scene to
-     * an other which was before it
+     * @param event get an event
      * @throws IOException
      */
     @FXML
@@ -92,9 +93,8 @@ public class PalyaController implements Initializable {
     }
 
     /**
-     *
-     * @param event get an event when the button is pushed the player try to
-     * move down in the board
+     *when the button is pushed the player try to move down in the board
+     * @param event get an event 
      * @throws IOException
      */
 
@@ -140,9 +140,8 @@ public class PalyaController implements Initializable {
     }
 
     /**
-     *
-     * @param event get an event when the button is pushed 
-     * the player try to move left in the board
+     * when the button is pushed the player try to move left in the board
+     * @param event get an event
      * @throws IOException
      */
 
@@ -188,9 +187,8 @@ public class PalyaController implements Initializable {
     }
     
     /**
-     * 
-     * @param event get an event when the button is pushed 
-     * the player try to move right in the board
+     * when the button is pushed the player try to move right in the board
+     * @param event get an event 
      * @throws IOException 
      */
 
@@ -234,9 +232,8 @@ public class PalyaController implements Initializable {
         }
     }
     /**
-     * 
-     * @param event get an event when the button is pushed 
-     * the player try to move up in the board
+     * when the button is pushed the player try to move up in the board
+     * @param event get an event 
      * @throws IOException 
      */
 
