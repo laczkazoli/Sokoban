@@ -99,13 +99,11 @@ public class PalyaController implements Initializable {
             loader.<FXMLWinController>getController().setFelhasznalo(jatekos);
             loader.<FXMLWinController>getController().setPontszam(String.valueOf(szamlalo));
 
-            FXMLWinController amaz = (FXMLWinController) loader.getController();
-            amaz.pont("" + szamlalo, jatekos);
-
             Scene scene = new Scene(root);
             stage.setScene(scene);
 
             stage.show();
+
         } else {
 
             Stage stage;
@@ -142,9 +140,7 @@ public class PalyaController implements Initializable {
             loader.<FXMLController>getController();
             loader.<FXMLWinController>getController().setFelhasznalo(jatekos);
             loader.<FXMLWinController>getController().setPontszam(String.valueOf(szamlalo));
-
-            FXMLWinController amaz = (FXMLWinController) loader.getController();
-            amaz.pont("" + szamlalo, jatekos);
+            
             label.setText(jatekos);
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -186,8 +182,6 @@ public class PalyaController implements Initializable {
             loader.<FXMLWinController>getController().setFelhasznalo(jatekos);
             loader.<FXMLWinController>getController().setPontszam(String.valueOf(szamlalo));
 
-            FXMLWinController amaz = (FXMLWinController) loader.getController();
-            amaz.pont("" + szamlalo, jatekos);
             label.setText(jatekos);
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -228,8 +222,6 @@ public class PalyaController implements Initializable {
             loader.<FXMLWinController>getController().setFelhasznalo(jatekos);
             loader.<FXMLWinController>getController().setPontszam(String.valueOf(szamlalo));
 
-            FXMLWinController amaz = (FXMLWinController) loader.getController();
-            amaz.pont("" + szamlalo, jatekos);
             label.setText(jatekos);
             Scene scene = new Scene(root);
             stage.setScene(scene);

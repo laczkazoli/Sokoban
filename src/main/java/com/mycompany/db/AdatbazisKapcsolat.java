@@ -17,7 +17,7 @@ import javax.persistence.Persistence;
 public class AdatbazisKapcsolat {
 
     private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("egyseges");
-    private static EntityManager em = emf.createEntityManager();
+    public static EntityManager em = emf.createEntityManager();
     
     public static EntityManager getEntityManeger()
     {
