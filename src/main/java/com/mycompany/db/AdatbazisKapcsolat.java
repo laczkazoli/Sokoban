@@ -19,11 +19,18 @@ public class AdatbazisKapcsolat {
     private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("egyseges");
     public static EntityManager em = emf.createEntityManager();
     
+    /**
+     * 
+     * This is the EntityManager 
+     */
     public static EntityManager getEntityManeger()
     {
         return em;
     }
     
+    /**
+     * close the entity
+     */
     public static void close(){
     
         em.close();

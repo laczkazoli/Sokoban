@@ -40,7 +40,10 @@ public class FXMLEredmenyController {
     ListView<Felhasznalo> listview;
     String felhasznalonev;
     String pontszam;
-
+/**
+ * Firstly, put the new value into database
+ * Secondly, read all of date from database
+ */
     public void highscorekiir() {
 
         FelhasznaloDAO.felhasznaloHozzaad(felhasznalonev, pontszam);
@@ -50,14 +53,24 @@ public class FXMLEredmenyController {
 
     }
 
+    /**
+     * Set the value of felhasznalonev
+     */
     public void setFelhasznalo(String felhasznalonev) {
         this.felhasznalonev = felhasznalonev;
     }
+    
+    /**
+     * Set the value of pontszam
+     */
 
     public void setPontszam(String pontszam) {
         this.pontszam = pontszam;
     }
 
+    /**
+     * Quite from the game 
+     */
     @FXML
     private void kilepes(ActionEvent event) {
 

@@ -6,9 +6,19 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+/**
+ * 
+ * @author ikor
+ */
 
 public class MainApp extends Application {
 
+    /**
+     * 
+     * @param stage
+     * @throws Exception 
+     */
+    
     @Override
     public void start(Stage stage) throws Exception {
 
@@ -20,6 +30,11 @@ public class MainApp extends Application {
 		stage.setTitle("Sokoban");
 		stage.show();
     }
+    
+    /**
+     * 
+     * @param args 
+     */
 
     public static void main(String[] args) {
         launch(args);

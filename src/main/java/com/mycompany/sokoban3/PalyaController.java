@@ -66,6 +66,12 @@ public class PalyaController implements Initializable {
     @FXML
     public Button bal;
 
+    /**
+     *
+     * @param event get an event when the button is pushed change the scene to
+     * an other which was before it
+     * @throws IOException
+     */
     @FXML
     private void visszaaction(ActionEvent event) throws IOException {
 
@@ -84,6 +90,13 @@ public class PalyaController implements Initializable {
         //scene.getStylesheets().add("/styles/Styles.css");
         stage.show();
     }
+
+    /**
+     *
+     * @param event get an event when the button is pushed the player try to
+     * move down in the board
+     * @throws IOException
+     */
 
     @FXML
     private void le(ActionEvent event) throws IOException {
@@ -126,6 +139,13 @@ public class PalyaController implements Initializable {
         }
     }
 
+    /**
+     *
+     * @param event get an event when the button is pushed 
+     * the player try to move left in the board
+     * @throws IOException
+     */
+
     @FXML
     private void bal(ActionEvent event) throws IOException {
 
@@ -140,7 +160,7 @@ public class PalyaController implements Initializable {
             loader.<FXMLController>getController();
             loader.<FXMLWinController>getController().setFelhasznalo(jatekos);
             loader.<FXMLWinController>getController().setPontszam(String.valueOf(szamlalo));
-            
+
             label.setText(jatekos);
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -166,6 +186,13 @@ public class PalyaController implements Initializable {
             stage.show();
         }
     }
+    
+    /**
+     * 
+     * @param event get an event when the button is pushed 
+     * the player try to move right in the board
+     * @throws IOException 
+     */
 
     @FXML
     private void jobb(ActionEvent event) throws IOException {
@@ -206,6 +233,12 @@ public class PalyaController implements Initializable {
             stage.show();
         }
     }
+    /**
+     * 
+     * @param event get an event when the button is pushed 
+     * the player try to move up in the board
+     * @throws IOException 
+     */
 
     @FXML
     private void fel(ActionEvent event) throws IOException {
@@ -248,6 +281,14 @@ public class PalyaController implements Initializable {
         }
     }
 
+    /**
+     * 
+     * Get details about the player and the board
+     * @param nev get the name of the player
+     * @param mp get the board structure
+     * @param aktx get the position x of player in the board
+     * @param akty get the position x of player in the board
+     */
     public void nev(String nev, String[][] mp, int aktx, int akty) {
         label.setText(nev);
         jatekos = nev;
@@ -271,6 +312,12 @@ public class PalyaController implements Initializable {
         }
     }
 
+    /**
+     * Here are the conditions about moving down
+     * @param m1 get the board
+     * @param jatek get the name of the player
+     * @param szam get the number of his\her steps
+     */
     public void lelep(String[][] m1, String jatek, int szam) {
         boolean valt = true;
         int x = 0;
@@ -324,10 +371,17 @@ public class PalyaController implements Initializable {
         szamlalo = szam;
     }
 
+    /**
+     * Here are the conditions about moving right
+     * @param m1 get the board
+     * @param jatek get the name of the player
+     * @param szam get the number of his\her steps
+     */
+    
     public void jobblep(String[][] m1, String jatek, int szam) {
         int x = 0;
         int y = 0;
-      label.setText(jatek);
+        label.setText(jatek);
         boolean valt = true;
         for (int i = 0; i < 6; ++i) {
             for (int j = 0; j < 6; ++j) {
@@ -380,6 +434,12 @@ public class PalyaController implements Initializable {
         szamlalo = szam;
     }
 
+    /**
+     * Here are the conditions about moving left
+     * @param m1 get the board
+     * @param jatek get the name of the player
+     * @param szam get the number of his\her steps
+     */
     public void ballep(String[][] m1, String jatek, int szam) {
         int x = 0;
         int y = 0;
@@ -434,6 +494,12 @@ public class PalyaController implements Initializable {
         szamlalo = szam;
     }
 
+    /**
+     * Here are the conditions about moving up
+     * @param m1 get the board
+     * @param jatek get the name of the player
+     * @param szam get the number of his\her steps
+     */
     public void fellep(String[][] m1, String jatek, int szam) {
         int x = 0;
         int y = 0;
@@ -490,6 +556,13 @@ public class PalyaController implements Initializable {
         szamlalo = szam;
 
     }
+   
+    /**
+     * 
+     * Change a String type to a text type
+     * @param n is the unity of the board
+     * @return a text type
+     */
 
     public Text alakit(String n) {
         Text text = new Text(n);

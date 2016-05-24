@@ -20,6 +20,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+/**
+ * 
+ * @author Laczka Zoltan
+ */
+
 public class FXMLController implements Initializable {
     
     
@@ -35,6 +40,11 @@ public class FXMLController implements Initializable {
     @FXML
     public TextField playerName;
     
+    /**
+     * This button change the scene to an other where will be the game board
+     * @param event
+     * @throws IOException 
+     */
 
     
   @FXML
@@ -77,11 +87,17 @@ public class FXMLController implements Initializable {
         stage.show(); 
     }
      
+     /**
+      * Quite from the game
+      */
      @FXML
     private void quitHandleButtonAction(ActionEvent event) {
     	Platform.exit();
     }
     
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }  

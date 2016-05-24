@@ -54,13 +54,24 @@ public class FXMLWinController implements Initializable {
 
     String felhasznalonev;
     String pontszam;
-
+/**
+ * 
+ * @param event get an event when the button is pushed
+ * and quit in the game
+ */
+    
     @FXML
     private void kilepes(ActionEvent event) {
 
         Platform.exit();
     }
-
+/**
+ * 
+ * @param event get an event when the button is pushed
+ * and change the scene where will be the results
+ * @throws IOException 
+ */
+    
     @FXML
     private void eredmeny(ActionEvent event) throws IOException {
 
@@ -84,19 +95,39 @@ public class FXMLWinController implements Initializable {
         //scene.getStylesheets().add("/styles/Styles.css");
         stage.show();
     }
+    
+    /**
+     * 
+     * @param felhasznalonev set the felhasznalonev's value
+     */
 
     public void setFelhasznalo(String felhasznalonev) {
         this.felhasznalonev = felhasznalonev;
     }
+    
+    /**
+     * 
+     * @param pontszam set the pontszam's value
+     */
 
     public void setPontszam(String pontszam) {
         this.pontszam = pontszam;
     }
+    
+    /**
+     * 
+     * @param a get the player's score
+     * @param b get the player's name
+     */
 
     public void pont(String a, String b) {
         pontszamlabel.setText(a);
         neve = b;
     }
+    
+/**
+     * Initializes the controller class.
+     */
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
