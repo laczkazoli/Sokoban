@@ -54,6 +54,9 @@ public class FelhasznaloTest {
         AdatbazisKapcsolat.em.persist(b);
         AdatbazisKapcsolat.em.remove(b);
     }
+    
+    
+    
 
 
 }

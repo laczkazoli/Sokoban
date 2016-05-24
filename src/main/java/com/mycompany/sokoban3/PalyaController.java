@@ -327,7 +327,7 @@ public class PalyaController implements Initializable {
     public void jobblep(String[][] m1, String jatek, int szam) {
         int x = 0;
         int y = 0;
-        label.setText(jatek);
+      label.setText(jatek);
         boolean valt = true;
         for (int i = 0; i < 6; ++i) {
             for (int j = 0; j < 6; ++j) {

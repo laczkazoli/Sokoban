@@ -49,6 +49,7 @@ public class FXMLController implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/palya.fxml"));
         root = (Parent) loader.load();
         loader.<FXMLController>getController();
+        
          PalyaController nev = (PalyaController) loader.getController();
          
          
